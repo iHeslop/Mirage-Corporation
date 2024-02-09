@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>MIRAGE CORPORATION</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">
+        <img src="/assets/logo.png" />
+      </a>
+      <ul>
+        <li>
+          <a href="games.html">games</a>
+        </li>
+        <li>
+          <a href="shop.html">shop</a>
+        </li>
+      </ul>
+    </nav>
+
+    <img src="/assets/boat-transparent.gif" id="boat" />
+    <main>
+      <h2>Receive Updates</h2>
+      <form class="contact-form" id="contact-form">
+        <label for="fullName">Full Name: </label>
+        <input type="text" name="fullName" id="fullName" required />
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" required />
+
+        <button onclick="clearText()">Clear</button>
+        <button onclick="submitMessage()">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <span id="text">MIRAGE CORPORATION - </span>
+      <span id="date"></span>
+      <span id="text"> - IHESLOP</span>
+    </footer>
+    <script>
+      const date = document.getElementById("date");
+      date.innerHTML = new Date().toDateString();
+
+      const name = document.getElementById("fullName");
+      const email = document.getElementById("email");
+
+      function submitMessage() {
+        alert(`Thanks ${name.value} we will be in touch shortly!`);
+      }
+      function clearText(e) {
+        e.preventDefault();
+        name.value = "";
+        email.value = "";
+      }
+    </script>
+  </body>
+</html>

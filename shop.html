@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>MIRAGE - SHOP</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">
+        <img src="/assets/logo.png" />
+      </a>
+      <ul>
+        <li>
+          <a href="games.html">games</a>
+        </li>
+        <li>
+          <a href="shop.html">shop</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <img src="/assets/diaper.png" id="diaper" />
+      <div id="container">
+        <h2>Reinforced Water-Resistant Adult Diaper</h2>
+        <h3>$99.95 AUD</h3>
+        <br />
+        <p>Peace of Mind - Soft, dry and leak free.</p>
+        <br />
+        <p>Odour Free - Works fast to counter odours.</p>
+        <br />
+        <p>
+          High and Dry - Uses Double Layer Technology to wick moisture away from
+          problem areas.
+        </p>
+        <br />
+        <p>
+          Form Fitting Comfort - QuiltcoTM fabric ensures a soft and firm fit,
+          while the silicon InnerEmbraceTM harness works to optimally position
+          the cup in the problem area
+        </p>
+        <br />
+        <br />
+        <label for="sizeSelector">Select a size:</label>
+        <select name="sizeSelector" id="sizeSelector">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+          <option value="XXXL">XXXL</option>
+        </select>
+        <br />
+        <button onclick="addToCart()" id="addToCart">Add to Cart</button>
+      </div>
+    </main>
+    <img src="assets/mopping-mop.gif" id="mop" />
+    <footer>
+      <span id="text">MIRAGE CORPORATION - </span>
+      <span id="date"></span>
+      <span id="text"> - IHESLOP</span>
+    </footer>
+    <script>
+      const date = document.getElementById("date");
+      date.innerHTML = new Date().toDateString();
+      const size = document.getElementById("sizeSelector");
+
+      function addToCart() {
+        alert(`Your ${size.value} size diaper is on the way!`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="games.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>MIRAGE - GAMES</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png" />
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">
+        <img src="/assets/logo.png" />
+      </a>
+      <ul>
+        <li>
+          <a href="games.html">games</a>
+        </li>
+        <li>
+          <a href="shop.html">shop</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="inferno">
+      <img src="/assets/pixel-forest.jpeg" id="bg" />
+      <div id="header">
+        <h2 id="title">Project Inferno - Announcing Early 2030</h2>
+      </div>
+      <div id="fire-container">
+        <img src="/assets/fire.gif" id="fire" />
+      </div>
+      <div id="person-container">
+        <img src="/assets/person.gif" id="person" />
+      </div>
+    </div>
+
+    <footer>
+      <span id="text">MIRAGE CORPORATION - </span>
+      <span id="date"></span>
+      <span id="text"> - IHESLOP</span>
+    </footer>
+
+    <script>
+      const date = document.getElementById("date");
+      date.innerHTML = new Date().toDateString();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    background-image: url('/assets/wallpaperflare.com_wallpaper.jpg');
+    overflow: hidden;
+}
+
+main > form >label {
+    color: white;
+}
+
+main > h2 {
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-left: 20px;
+    bottom: 60px;
+}
+
+button:hover {
+    cursor: pointer;
+}
