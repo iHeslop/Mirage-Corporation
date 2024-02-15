@@ -9,7 +9,7 @@ main > img {
     height: 550px;
 }
 
-main > div> h2 {
+main > div > h2 {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
@@ -55,4 +55,128 @@ main > div> h2 {
 #addToCart:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    main>img {
+            height: 13rem;
+            margin-bottom: 10px ;
+        }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #diaper {
+        margin-right: 0px;
+    }
+    #container {
+        width: 90%;
+    }
+    main>div>h2 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    main>div>h3 {
+        font-size: 12px;
+    }
+    main>div>p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    main>div>br {
+        display: none;
+    }
+
+    #container>select {
+        margin-top: 10px;
+        width: 50%;
+    }
+    #container>label {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    #addToCart {
+        width: 50%;
+        height: 30px;
+        margin-top: 5px;
+    }
+    #mop {
+        z-index: -10;
+        position: absolute;
+        right: 20px;
+        bottom: 50px;
+        height: 110px;
+    }
+}
+
+
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+    main>img {
+        height: 28rem;
+        margin-bottom: 10px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #diaper {
+        margin-right: 0px;
+    }
+
+    #container {
+        width: 90%;
+    }
+
+    main>div>h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    main>div>h3 {
+        font-size: 20px;
+    }
+
+    main>div>p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    main>div>br {
+        display: none;
+    }
+
+    #container>select {
+        margin-top: 10px;
+        width: 40%;
+        font-size: 14px;
+    }
+
+    #container>label {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    #addToCart {
+        width: 40%;
+        height: 30px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    #mop {
+        z-index: -10;
+        position: absolute;
+        right: 20px;
+        bottom: 70px;
+        height: 150px;
+    }
 }
